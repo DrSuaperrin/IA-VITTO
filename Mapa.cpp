@@ -10,7 +10,7 @@ const char VACIO = '.';
 const char OBSTACULO = '#';
 const char INICIO = 'S';
 const char META = 'G';
-const char VISTO = '*';
+const char VISTO = 'x';
 const char CAMINO = 'o';
 
 Mapa crearMapa(int fila, int columna){
@@ -145,7 +145,7 @@ void imprimir_mapa(const Mapa& mapa, const vector<vector<bool>>& vistos, const v
 
             for(int j = 0; j < mapa.columna; j++){
 
-                if(vistos[i][j] && display[i][j] != INICIO && display[i][j] != META && display[i][j] != OBSTACULO) display[i][j] == VISTO;
+                if(vistos[i][j] && display[i][j] != INICIO && display[i][j] != META && display[i][j] != OBSTACULO) display[i][j] = VISTO;
 
             }
 

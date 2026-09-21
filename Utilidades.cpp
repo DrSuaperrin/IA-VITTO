@@ -5,6 +5,7 @@
 #include <cmath>
 #include <algorithm>
 #include <limits>
+#include <windows.h>
 
 using namespace std;
 
@@ -58,13 +59,7 @@ int pasos){
 
     cout << "\nPresiona ENTER para continuar...";
 
-    // Limpiar el ENTER que quedó del cin >> 
-    cin.ignore(
-        numeric_limits<streamsize>::max(),
-        '\n'
-    );
-
-    cin.get();
+    Sleep(300);
 
 }
 
