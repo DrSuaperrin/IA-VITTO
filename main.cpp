@@ -4,6 +4,7 @@
 #include "Mapa.h"
 #include "Utilidades.h"
 #include "DFS.h"
+#include "BFS.h"
 
 using namespace std;
 
@@ -112,7 +113,7 @@ int main()
     cout << "          EJECUTANDO DFS\n";
     cout << "====================================\n";
 
-    Resultado_Busqueda resultado = DFS(mapa);
+    Resultado_Busqueda resultado = BFS(mapa);
 
     // ==========================================
     // MOSTRAR RESULTADO
