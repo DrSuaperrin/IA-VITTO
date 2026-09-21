@@ -1,7 +1,9 @@
 #ifndef mapa_h
 #define mapa_h
 
-#include "inicializador.h"
+#include "Inicializador.h"
+#include <string>
+#include <vector>
 
 Mapa crearMapa(int linea, int columna);
 

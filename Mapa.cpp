@@ -27,6 +27,8 @@ Mapa crearMapa(int fila, int columna){
 
     mapa.meta = {-1, -1};
 
+    return mapa;
+
 }
 
 bool posicionValida(const Mapa& mapa, Punto p){
@@ -128,9 +130,12 @@ vector<Punto> getVecinos(const Mapa& mapa, Punto p){
 
 void imprimir_mapa(const Mapa& mapa, const vector<vector<bool>>& vistos, const vector<Punto>& camino ){
 
-    #ifdef _WIN32 system("cls");
-    #else system("clear");
+    #ifdef _WIN32
+        system("cls");
+    #else
+        system("clear");
     #endif
+
 
     vector<vector<char>> display = mapa.grid;
 

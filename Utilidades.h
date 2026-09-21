@@ -1,7 +1,7 @@
-#ifndef utilidades.h
-#define utilidades.h
+#ifndef utilidades_h
+#define utilidades_h
 
-#include "inicializador.h"
+#include "Inicializador.h"
 
 int manhattan(Punto a, Punto b);
 
@@ -11,6 +11,6 @@ vector<Punto> reconstruirCamino(const vector<vector<Punto>> parientes, Punto ini
 
 void mostrarPasos(const Mapa& mapa, const vector<vector<bool>>& vistos, Punto actual, int pasos);
 
-void mostrarResultado(const Mapa& mapa, const BuscarResultado& resultado);
+void mostrarResultado(const Mapa& mapa, const Resultado_Busqueda& resultado);
 
 #endif
